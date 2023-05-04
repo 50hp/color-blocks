@@ -10,7 +10,7 @@ $('#blocks').on('click','.block', removeBlock);
 
 }
 let red = 1, blue = 1, green = 1, yellow = 1;
-
+//Each add function adds a new colored block.
 function addRed(){
         $('#blocks').append('<div class="block red-fill"></div>');
         $('#red-count').empty();
@@ -35,6 +35,7 @@ function addYellow(){
         yellow++;
         $('#yellow-count').append(yellow);
 }
+//Each recount function empties the count div and adds the amount left on screen
 function redRecount(){
         $('#red-count').empty();
         $('#red-count').append($('.red-fill').length);
@@ -51,6 +52,7 @@ function yellowRecount(){
         $('#yellow-count').empty();
         $('#yellow-count').append($('.yellow-fill').length);
 }
+//removes the div clicked on and recounts all the remaining divs in the block section.
 function removeBlock(){
         $(this).remove();
         redRecount();
