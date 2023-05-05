@@ -16,12 +16,14 @@ function addRed(){
         $('#red-count').empty();
         //red++;
         //$('#red-count').append(red);
+       //gets the length of .fill and inputs that as the value
         $('#red-count').append($('.red-fill').length);
 }
 function addBlue(){
         $('#blocks').append('<div class="block blue-fill"></div>');
         $('#blue-count').empty();
         //blue++;
+       //gets the length of .fill and inputs that as the value
         $('#blue-count').append($('.blue-fill').length);
         //$('#blue-count').append(blue);
 }
@@ -30,6 +32,7 @@ function addGreen(){
         $('#green-count').empty();
         //green++;
        // $('#green-count').append(green);
+       //gets the length of .fill and inputs that as the value
         $('#green-count').append($('.green-fill').length);
 }
 function addYellow(){
@@ -37,6 +40,7 @@ function addYellow(){
         $('#yellow-count').empty();
         //yellow++;
        // $('#yellow-count').append(yellow);
+       //gets the length of .fill and inputs that as the value
         $('#yellow-count').append($('.yellow-fill').length);
 }
 //Each recount function empties the count div and adds the amount left on screen
@@ -47,7 +51,7 @@ function addYellow(){
 // function greenRecount(){
 
 // function yellowRecount(){
-
+//a function to re get all the .fill array lengths when a block is removed.
 function recountAll(){
         $('#yellow-count').empty();
         $('#yellow-count').append($('.yellow-fill').length);
